@@ -16,3 +16,4 @@ int main(){
     }
     return 0;
 }
+// Vectors aren't exactly arrays. ... They are dynamic arrays. They can be resized as needed rather than being of a fixed size.
