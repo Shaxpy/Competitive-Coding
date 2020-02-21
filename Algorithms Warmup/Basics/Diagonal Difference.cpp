@@ -4,28 +4,21 @@
 
 #include <iostream>
 
-
-
 using namespace std;
 
 int diag(int n,int arr[100][100])
 {  int x=0,y=0;
     for (int i=0;i<n;++i)
-{       for (int j=0;j<n;++j)
-            {
-              if (i==j)
-                {x+=arr[i][j];
+            
+                {x+=arr[i][i];
                 }
-}}
 
     for (int i=0;i<n;++i)
-{       for (int j=0;j<n;++j)
-            {
-                if ((i+j)==n)
-               { y+=arr[i][j];
-            }}
+{   
+               { y+=arr[i][n-i-1];
+            }
 }
-int b=(x-y);
+int b=abs(x-y);
 return b;
 }
 
@@ -39,8 +32,8 @@ int arr[100][100];
 
 for (int i=0;i<n;i++)
 {   for (int j=0;j<n;j++)
-        cin>>arr[i][j];
-}
+      {  cin>>arr[i][j];
+}}
 
 int ans=diag(n,arr);
 cout<<ans;
