@@ -5,7 +5,6 @@ using namespace std;
 
 int main()
 {
-//    int m=0;n=1;
     long long a[50];long long r=0;
     int nresult=0,mresult=0;
 
