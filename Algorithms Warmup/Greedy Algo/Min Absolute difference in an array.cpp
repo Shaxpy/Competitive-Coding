@@ -4,12 +4,15 @@
 
 using namespace std;
 
+
 // Complete the minimumAbsoluteDifference function below.
 int minAbs(int arr[],int n) {
+    
     sort(arr, arr+n); 
     int d=INT_MAX;
-    for (int i=0;i<n;i++)
-    {   if (arr[i+1] - arr[i] < d) 
+    for (int i=0;i<n-1;i++)
+    {     cin>>arr[i];
+        if (d>arr[i+1] - arr[i]) 
           d = arr[i+1] - arr[i]; }
     return d;   
     }
@@ -20,6 +23,7 @@ int main()
     int n;
     int splits;
     cin >> n;
+
     splits=minAbs(arr,n);
     cout<<abs(splits);
     return 0;
