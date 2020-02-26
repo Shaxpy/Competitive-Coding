@@ -9,32 +9,30 @@ int Candles(int ar[],int n) {
     int r=0;
     for (int i=0;i<n;i++)
     {
-        if (ar[i]==n)
-        {
-            r+=1;
-        }
-
-    }
-      
+        if (r<ar[i])
+        r=ar[i];
+    }     
 return r;
 }
 
-
 int main()
-{
+{int ab=0;
 
     int ar_count;
     cin >> ar_count;
     
     for (int i=0;i<ar_count;i++)
     {
-        
         cin>>ar[i];
-
     }
-    
     int a=0;
     a=Candles(ar,ar_count);
-    cout<<a;
+    ab=a;
+    int i=0;
+    while (i)
+    {   
+        
+            }
     return 0;
 }
+
