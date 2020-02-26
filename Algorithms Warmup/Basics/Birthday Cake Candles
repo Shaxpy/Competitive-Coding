@@ -4,36 +4,30 @@
 #include <array>
 
 using namespace std;
- int ar[100];
-int Candles(int ar[],int n) {
-    int r=0;
-    for (int i=0;i<n;i++)
-    {
-        if (r<ar[i])
-        r=ar[i];
-    }     
-return r;
-}
-
+ long long ar[100];
+ int r=0;
+ int i=0;
 int main()
 {int ab=0;
 
-    int ar_count;
+    long ar_count;
     cin >> ar_count;
     
     for (int i=0;i<ar_count;i++)
     {
         cin>>ar[i];
+        if (r<ar[i])
+        r=ar[i];
     }
-    int a=0;
-    a=Candles(ar,ar_count);
-    int i=a;
 
-    while (i!=1)
-    {   --i;
-    ab++;
+    while (i<ar_count)
+
+    {   
+        if (ar[i]==r)
+        {ab+=1;}
+        i++;
            }
-           cout<<ab;
+        cout<<ab;
     return 0;
 }
 
