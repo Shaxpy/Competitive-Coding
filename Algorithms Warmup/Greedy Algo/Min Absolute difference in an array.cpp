@@ -4,7 +4,6 @@
 
 using namespace std;
 
-
 // Complete the minimumAbsoluteDifference function below.
 int minAbs(int arr[],int n) {
     sort(arr, arr+n); 
