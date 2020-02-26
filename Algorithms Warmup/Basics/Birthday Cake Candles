@@ -4,30 +4,24 @@
 #include <array>
 
 using namespace std;
- long long ar[100];
- int r=0;
- int i=0;
-int main()
-{int ab=0;
-
-    long ar_count;
-    cin >> ar_count;
-    
-    for (int i=0;i<ar_count;i++)
-    {
-        cin>>ar[i];
-        if (r<ar[i])
-        r=ar[i];
-    }
-
-    while (i<ar_count)
-
-    {   
-        if (ar[i]==r)
-        {ab+=1;}
-        i++;
+ int main()
+ {
+     int n=0,l=0;
+     cin>>n;
+     int x=0;
+     int high=-1;
+     for (int i=0;i<n;i++)
+        {   
+            cin>>l;
+            if(high<l)
+           { high=l;
+            x=1;
            }
-        cout<<ab;
-    return 0;
-}
+            else if(l==high)
+            x++;
+        }
+        cout<<x;
 
+
+
+return 0; }
