@@ -27,12 +27,13 @@ int main()
     }
     int a=0;
     a=Candles(ar,ar_count);
-    ab=a;
-    int i=0;
-    while (i)
-    {   
-        
-            }
+    int i=a;
+
+    while (i!=1)
+    {   --i;
+    ab++;
+           }
+           cout<<ab;
     return 0;
 }
 
