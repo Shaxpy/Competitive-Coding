@@ -8,7 +8,6 @@ using namespace std;
 int main()
 {
 int ans=0,q=0;
-
 int n=0,y=0,x=0;
 cin>>n;
 
